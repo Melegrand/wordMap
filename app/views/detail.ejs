@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="/index.css" rel="stylesheet">
+  <script defer src="/map.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.6.1/dist/svg-pan-zoom.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/StephanWagner/svgMap@v2.10.1/dist/svgMap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/gh/StephanWagner/svgMap@v2.10.1/dist/svgMap.min.css" rel="stylesheet">
+</head>
+<body class="body">
+    <div class="left">
+        <a class='btn' href="/">Retour</a>
+        <div class="img_size" id="svgMap"></div>
+        <img class="img_size" src='/img/<%=country.iso2.toLowerCase()%>.svg'>
+    </div>
+    <div class="right">
+        <h1>Nom: <%= country.nom %></h1>
+        <p>Capitale : <%= country.capitale %></p>
+        <p>Code iso2 : <%= country.iso2 %></p>
+        <p>Code iso3 : <%= country.iso3 %></p>
+    </div>
+
+</body>
+</html>
